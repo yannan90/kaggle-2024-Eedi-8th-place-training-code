@@ -20,7 +20,7 @@ This code implements a **hard negative mining pipeline** for a **retriever-reran
 ### How to use the code
 The main implementation is organized within the Jupyter Notebook file **`Eedi_run.ipynb`**. Each code block in the notebook corresponds to a specific functionality within the overall pipeline, invoking relevant Python files to handle the underlying processes.
 
-I used this code to train Qwen2.5-14b (retriever) and Qwen2.5-32b (reranker), on 2 A100 (80G) GPUs. However, this code could be modified to accomodate other back-bone models too.
+I used this code to train Qwen2.5-14b (retriever) and Qwen2.5-32b (reranker), on 2 A100 (80G) GPUs. However, this code could be modified to accomodate other base models too.
 
 The hard negative mining & retriever/reranker trainings should be performed multiple time (iteratively) to improve final inference performance.
 
