@@ -6,12 +6,12 @@ This repository contains the training code and quantization code (AWQ) for the 8
 This code implements a **hard negative mining pipeline** for a **retriever-reranker** framework, and evetually perform **quantization (AWQ 4bit format)** to the reranker, for inference on limited GPU resources. 
 
 ### Training Flow
-- **Retriever Training**:  
+**Retriever Training**:  
   1. The retriever generates hard negative training data.  
   2. Train the retriever.  
   3. Repeat the previous steps iteratively.  
 
-- **Reranker Training**:  
+**Reranker Training**:  
   1. The retriever generates hard negative training data.  
   2. Train the reranker.  
   3. Repeat the previous steps iteratively.  
