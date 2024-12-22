@@ -13,5 +13,4 @@ retrievers (4 Qwen2.5-14b models ensembled) → 40 misconceptions → reranker (
 The main implementation is organized within the Jupyter Notebook file **`Eedi_run.ipynb`**. Each code block in the notebook corresponds to a specific functionality within the overall pipeline, invoking relevant Python files to handle the underlying processes.  
 
 ### Additional Resources
-For a detailed explanation and the inference notebook, please refer to the competition solution write-up:  
-[Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
+For a detailed explanation and the inference notebook, please refer to the competition solution write-up: [Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
