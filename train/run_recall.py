@@ -469,7 +469,7 @@ class BiEncoderModel(nn.Module):
         # self.llm = AutoModelForCausalLM.from_pretrained(args.llm_model_name_or_path)
 
         # self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
-        self.cross_entropy = nn.CrossEntropyLoss(reduction='mean',label_smoothing=0.2) #😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊
+        self.cross_entropy = nn.CrossEntropyLoss(reduction='mean',label_smoothing=0.2)
         self.normlized = normlized
         self.sentence_pooling_method = sentence_pooling_method
         self.temperature = temperature
