@@ -6,8 +6,16 @@ This repository contains the training code and quantization code (AWQ) for the 8
 This code implements an **hard negative mining pipeline** for a **retriever-reranker** framework, and evetually perform **quantization (AWQ 4bit format)** to the trained model, for inference on limited GPU resources. 
 
 ### Training Flow
-**retriver training**: retriever generates hard negative training data → train retriever → repeat previous steps
-**reranker training**: retriever generates hard negative training data → train reranker → repeat previous steps → reranker quantization
+- **Retriever Training**:  
+  1. The retriever generates hard negative training data.  
+  2. Train the retriever.  
+  3. Repeat the previous steps iteratively.  
+
+- **Reranker Training**:  
+  1. The retriever generates hard negative training data.  
+  2. Train the reranker.  
+  3. Repeat the previous steps iteratively.  
+  4. Apply reranker quantization.  
 
 ### How to use the code
 The main implementation is organized within the Jupyter Notebook file **`Eedi_run.ipynb`**. Each code block in the notebook corresponds to a specific functionality within the overall pipeline, invoking relevant Python files to handle the underlying processes.
@@ -15,3 +23,7 @@ The hard negative mining & retriever/reranker trainings should be performed mult
 
 ### Additional Resources
 For a detailed explanation and the inference notebook, please refer to the competition solution write-up: [Eedi 8th Place Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
+
+
+Here’s a version with proper line breaks for better readability:
+
