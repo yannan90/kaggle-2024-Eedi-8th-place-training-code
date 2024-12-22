@@ -27,8 +27,7 @@ class BiEncoderModel(nn.Module):
 
         self.model = model
         self.tokenizer = tokenizer
-        # self.cross_entropy = nn.CrossEntropyLoss(reduction='mean')
-        self.cross_entropy = nn.CrossEntropyLoss(reduction='mean',label_smoothing=0.1) # 😊😊 需要测试一下smoothing到底要不要(原来是0.3现在已经减少了.)
+        self.cross_entropy = nn.CrossEntropyLoss(reduction='mean',label_smoothing=0.1)
         if self.model.config.pad_token_id is None:
             self.model.config.pad_token_id = self.tokenizer.pad_token_id
         self.config = self.model.config
