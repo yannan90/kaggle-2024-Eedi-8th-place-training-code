@@ -7,7 +7,7 @@ This training code implements an **iterative hard negative mining pipeline** for
 
 ### Inference Workflow
 The primary inference pipeline the training code is based upon is as follows:  
-retrievers (4 Qwen2.5-14b models ensembled by weighted sum) → 40 misconceptions → reranker (a single Qwen2.5-32b model)→ 25 misconceptions
+retrievers (4 Qwen2.5-14b models ensembled) → 40 misconceptions → reranker (single Qwen2.5-32b model)→ 25 misconceptions
 
 ### Additional Resources
 For a detailed explanation and the inference notebook, please refer to the competition discussion:  
