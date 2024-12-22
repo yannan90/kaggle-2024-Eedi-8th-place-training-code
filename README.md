@@ -10,5 +10,5 @@ The primary inference pipeline the training code is based upon is as follows:
 retrievers (4 Qwen2.5-14b models ensembled) → 40 misconceptions → reranker (single Qwen2.5-32b model)→ 25 misconceptions
 
 ### Additional Resources
-For a detailed explanation and the inference notebook, please refer to the competition discussion:  
-[Discussion Link](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
+For a detailed explanation and the inference notebook, please refer to the competition solution write-up:  
+[Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
