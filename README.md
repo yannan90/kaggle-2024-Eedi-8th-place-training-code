@@ -22,5 +22,5 @@ The main implementation is organized within the Jupyter Notebook file **`Eedi_ru
 The hard negative mining & retriever/reranker trainings should be performed multiple time (iteratively) to improve final inference performance.
 
 ### Additional Resources
-For more detailed explanation about the solution and the inference notebook, please refer to the competition solution write-up: [Eedi 8th Place Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
+For more detailed explanation and the inference notebook, please refer to the competition solution write-up: [Eedi 8th Place Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
 
