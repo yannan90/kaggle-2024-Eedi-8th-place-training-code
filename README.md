@@ -14,15 +14,14 @@ This code implements a **hard negative mining pipeline** for a **retriever-reran
 **Reranker Training**:  
   1. The retriever generates hard negative training data.  
   2. Train the reranker.  
-  3. Repeat the previous steps iteratively.  
-  4. Apply reranker quantization.
+  3. Apply reranker quantization.
 
 ### How to use the code
 The main implementation is organized within the Jupyter Notebook file **`Eedi_run.ipynb`**. Each code block in the notebook corresponds to a specific functionality within the overall pipeline, invoking relevant Python files to handle the underlying processes.
 
 I used this code to train Qwen2.5-14b (retriever) and Qwen2.5-32b (reranker), on 2 A100 (80G) GPUs. However, this code could be modified to accomodate other base models too.
 
-The hard negative mining & retriever/reranker trainings should be performed multiple time (iteratively) to improve final inference performance.
+The hard negative mining & retriever trainings should be performed multiple time (iteratively) to improve final inference performance.
 
 ### Additional Resources
 For more detailed explanation and the inference notebook, please refer to the competition solution write-up: [Eedi 8th Place Solution Write-up](https://www.kaggle.com/competitions/eedi-mining-misconceptions-in-mathematics/discussion/551412)
